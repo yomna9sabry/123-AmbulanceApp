@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_UpActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="319dp"
+        android:layout_height="400dp"
+        android:background="@drawable/submit_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="221dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background"
+        android:drawableRight="@drawable/ic_edit_black_24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="اسم المستخدم"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="#670410"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="221dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/background"
+        android:drawableRight="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="الرقم السري"
+        android:inputType="text"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_user"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="183dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/btn_submit"
+        android:text="دخول"
+        android:textColor="#BB2D3E"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_national_id"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <TextView
+        android:id="@+id/scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="الدخول بكود المسح"
+        android:textColor="#FFBB2D3E"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.128"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toTopOf="@+id/edit_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+
+    <TextView
+
+        android:id="@+id/text_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password"
+        app:layout_constraintVertical_bias="0.042" />
+</androidx.constraintlayout.widget.ConstraintLayout>
